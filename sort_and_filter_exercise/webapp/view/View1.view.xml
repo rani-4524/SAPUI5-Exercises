@@ -1,0 +1,52 @@
+<mvc:View controllerName="sortandfilterexercise.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <subHeader>
+                        <Toolbar id="toolbarMain">
+
+                            <Button id="btnSort" icon="sap-icon://sort" press="onSortClick"/>
+
+                            <Button id="btnFilter" icon="sap-icon://filter" press="onFilterClick"/>
+
+                        </Toolbar>
+
+                    </subHeader>
+
+                    <content>
+
+                        <Table id="idTable" items="{Model>/Information/}">
+
+                            <columns>
+
+                                <Column id="col1"> <Text id="txt1" text="Employee Name"/> </Column>
+
+                                <Column id="col2"> <Text id="txt2" text="Employee Id"/> </Column>
+
+                                <Column id="col3"> <Text id="txt3" text="Employee Role"/>   </Column>
+
+                                <Column id="col4"> <Text id="txt4" text="Age"/> </Column>
+
+                            </columns>
+
+                            <items>
+
+                                <ColumnListItem id="itemList">
+
+                                    <Text id="txte1" text="{path:'Model>EmpName'}"/>
+
+                                    <Text id="txte2" text="{path:'Model>EmpId'}"/>
+
+                                    <Text id="txte3" text="{path:'Model>Role'}"/>
+
+                                    <Text id="txte4" text="{path:'Model>Age'}"/>
+
+                                </ColumnListItem>
+
+                            </items>
+
+                        </Table>
+
+                    </content>
+    </Page>
+</mvc:View>

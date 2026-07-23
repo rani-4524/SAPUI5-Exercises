@@ -1,0 +1,69 @@
+<mvc:View
+    controllerName="expressionbindingexercise.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <List
+            id="_IDGenList1"
+            headerText="{Employee Details}"
+            class="sapUiResponsiveMargin"
+            width="auto"
+            items="{empdetails>/Information}"
+        >
+            <items>
+                <ObjectListItem
+                    id="_IDGenObjectListItem1"
+                    press=".onItemSelected"
+                    type="Active"
+                    title="{empdetails>EmpID} {empdetails>EmpName}"
+                    number="{empdetails>tRating}"
+                    numberState="{=${empdetails>tRating}>${empdetails>rThreshold}?'Success':'Warning'}"
+                >
+                    <ObjectAttribute
+                        id="empskill"
+                        text="{empdetails>Skill}"
+                    />
+                </ObjectListItem>
+            </items>
+        </List>
+
+        <!-- From This another Exercise code -->
+        <List id="_IDGenList" items="{Prod>/ProdData}">
+    <ObjectListItem id="_IDGenObjectListItem"
+        title="{Prod>ProdID}"
+        number="{Prod>qty}"
+        numberUnit="{Prod>measure}"
+    >
+        <attributes>
+            <ObjectAttribute id="_IDGenObjectAttribute"
+                title="Supplier"
+                text="{Prod>supplier}"
+            />
+
+            <ObjectAttribute id="_IDGenObjectAttribute1"
+                title="Supplier Date"
+                text="{Prod>supplierdate}"
+            />
+
+            <ObjectAttribute id="_IDGenObjectAttribute2"
+                title="Price"
+                text="{Prod>price}"
+            />
+        </attributes>
+
+        <firstStatus>
+            <ObjectStatus id="_IDGenObjectStatus1"
+                text="{Prod>qty}"
+                state="{= ${Prod>qty} > 100 ? 'Success' : 'Error' }"
+            />
+        </firstStatus>
+    </ObjectListItem>
+</List>
+
+       
+    </Page>
+</mvc:View>

@@ -1,0 +1,26 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+    <ViewSettingsDialog id="_IDGenViewSettingsDialog1" confirm="handleFilterDialogConfirm">
+        <filterItems>
+            <ViewSettingsFilterItem id="_IDGenViewSettingsFilterItem"
+                text="Employee Id"
+                key="EmpId"
+                multiSelect="false"
+            >
+                <items>
+                    <ViewSettingsItem id="_IDGenViewSettingsItem3"
+                        text="Less than 1000"
+                        key="EmpId___LT___1000"
+                    />
+
+                    <ViewSettingsItem id="_IDGenViewSettingsItem4"
+                        text="Greater than 1000"
+                        key="EmpId___GT___1000"
+                    />
+                </items>
+            </ViewSettingsFilterItem>
+        </filterItems>
+    </ViewSettingsDialog>
+</core:FragmentDefinition>

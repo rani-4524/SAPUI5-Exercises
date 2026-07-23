@@ -1,0 +1,22 @@
+<mvc:View
+    controllerName="routingexercise.controller.Details"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+>
+    <Page id="_IDGenPage1" title="Details View">
+        <content>
+            <VBox id="_IDGenVBox1" class="sapUiSmallMargin">
+                <Text
+                    id="idText"
+                    text=""
+                />
+
+                <Button id="_IDGenButton2"
+                    text="Home Page"
+                    press="onHomePage"
+                    class="sapUiSmallMarginTop"
+                />
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

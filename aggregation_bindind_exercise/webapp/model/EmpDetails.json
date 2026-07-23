@@ -1,0 +1,19 @@
+{
+    "empdata":[
+        {
+            "empid":100,
+            "empname":"Rani",
+            "emploc":"BDC"
+        },
+        {
+            "empid":200,
+            "empname":"Test2",
+            "emploc":"MDC"
+        },
+        {
+            "empid":300,
+            "empname":"Test3",
+            "emploc":"PDC"
+        }
+    ]
+}

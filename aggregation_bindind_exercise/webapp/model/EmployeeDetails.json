@@ -1,0 +1,31 @@
+{
+    "Information":[
+        {
+            "EmpID":"12345",
+            "EmpName":"John Doe",
+            "Skill":"SAP HANA",
+            "Gender":"Male",
+            "Weight":"75",
+            "tRating":3,
+            "rThreshold":3
+        },
+        {
+            "EmpID":"23456",
+            "EmpName":"Marry",
+            "Skill":"SAP ABAP",
+            "Gender":"Female",
+            "Weight":"60",
+            "tRating":4,
+            "rThreshold":3
+        },
+        {
+            "EmpID":"34567",
+            "EmpName":"Roger",
+            "Skill":"SAP BTP",
+            "Gender":"Male",
+            "Weight":"40",
+            "tRating":4,
+            "rThreshold":3
+        }
+    ]
+}

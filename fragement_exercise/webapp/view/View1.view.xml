@@ -1,0 +1,18 @@
+<mvc:View
+    controllerName="fragementexercise.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <content>
+            <core:Fragment
+                type="XML"
+                fragmentName="fragementexercise.fragments.ImageDemo"
+            />
+        </content>
+    </Page>
+</mvc:View>
