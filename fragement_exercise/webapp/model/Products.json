@@ -1,0 +1,44 @@
+{
+    "Products":[
+        {
+            "ProductName":"Product1",
+            "Quantity":21,
+            "ExtendedPrice":10.5,
+            "ShipperName":"Suppl1",
+            "ShippedDate":"2024-06-01 T00:00:00",
+            "Status":"A"
+        },
+        {
+            "ProductName":"Product2",
+            "Quantity":15,
+            "ExtendedPrice":20.0,
+            "ShipperName":"Suppl2",
+            "ShippedDate":"2024-06-02 T00:00:00",
+            "Status":"B"
+        },
+        {
+            "ProductName":"Product3",
+            "Quantity":30,
+            "ExtendedPrice":15.75,
+            "ShipperName":"Suppl3",
+            "ShippedDate":"2024-06-03 T00:00:00",
+            "Status":"C"
+        },
+        {
+            "ProductName":"Product4",
+            "Quantity":10,
+            "ExtendedPrice":25.0,
+            "ShipperName":"Suppl4",
+            "ShippedDate":"2024-06-04 T00:00:00",
+            "Status":"D"
+        },
+        {
+            "ProductName":"Product5",
+            "Quantity":5,
+            "ExtendedPrice":30.0,
+            "ShipperName":"Suppl5",
+            "ShippedDate":"2024-06-05 T00:00:00",
+            "Status":"E"
+        }
+    ]
+}

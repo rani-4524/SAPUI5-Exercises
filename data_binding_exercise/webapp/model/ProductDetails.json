@@ -1,0 +1,61 @@
+{
+  "products": [
+    {
+      "icon": "sap-icon://laptop",
+      "ProdDetails": {
+        "ProdId": 1000,
+        "ProdName": "Laptop",
+        "Quantity": 20,
+        "uom": "KG"
+      },
+      "SupplierDetails": {
+        "SupplierName": "Supplier1",
+        "ShippedDate": "2024-06-01"
+      },
+      "otherDetails": {
+        "Price": 500,
+        "Currency": "EUR",
+        "Status": "New",
+        "Dimensions": "10x15x20cm"
+      }
+    },
+    {
+      "icon": "sap-icon://employee",
+      "ProdDetails": {
+        "ProdId": 1001,
+        "ProdName": "Mobile",
+        "Quantity": 15,
+        "uom": "KG"
+      },
+      "SupplierDetails": {
+        "SupplierName": "Supplier2",
+        "ShippedDate": "2024-06-05"
+      },
+      "otherDetails": {
+        "Price": 700,
+        "Currency": "USD",
+        "Status": "Available",
+        "Dimensions": "15x20x25cm"
+      }
+    },
+    {
+      "icon": "sap-icon://product",
+      "ProdDetails": {
+        "ProdId": 1002,
+        "ProdName": "Monitor",
+        "Quantity": 10,
+        "uom": "KG"
+      },
+      "SupplierDetails": {
+        "SupplierName": "Supplier3",
+        "ShippedDate": "2024-06-10"
+      },
+      "otherDetails": {
+        "Price": 900,
+        "Currency": "INR",
+        "Status": "Sold",
+        "Dimensions": "20x30x40cm"
+      }
+    }
+  ]
+}

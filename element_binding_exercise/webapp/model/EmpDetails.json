@@ -1,0 +1,37 @@
+{
+    "Information":[
+        {
+            "EmpID":"12345",
+            "EmpName":"Test1",
+            "Location":"BDC8",
+            "EmpRole":"Trainer",
+            "EmpPskill":"SAP UI5",
+            "EmpSskill":"SAP BTP",
+            "EmpUnit":"LKM",
+            "EmpPhoneNo":"12345",
+            "EmpEmail":"test1@example.com"
+        },
+        {
+            "EmpID":"23456",
+            "EmpName":"Test2",
+            "Location":"BDC2",
+            "EmpRole":"Developer",
+            "EmpPskill":"SAP UI5",
+            "EmpSskill":"SAP BTP",
+            "EmpUnit":"LKM",
+            "EmpPhoneNo":"12345",
+            "EmpEmail":"test2@example.com"
+        },
+        {
+            "EmpID":"34567",
+            "EmpName":"Test3",
+            "Location":"BDC3",
+            "EmpRole":"Trainer",
+            "EmpPskill":"SAP UI5",
+            "EmpSskill":"SAP BTP",
+            "EmpUnit":"LKM",
+            "EmpPhoneNo":"12345",
+            "EmpEmail":"test3@example.com"
+        }
+    ]
+}

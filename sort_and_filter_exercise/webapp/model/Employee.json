@@ -1,0 +1,54 @@
+{
+    "Information": [
+        {
+            "EmpName": "Arun",
+            "EmpId": 123,
+            "Gender": "Male",
+            "Age": "25",
+            "Contact": "+123456789",
+            "Role": "Test Lead",
+            "rating": 4,
+            "date": "/Date(1402166783294)/"
+        },
+        {
+            "EmpName": "Karan",
+            "EmpId": 674,
+            "Gender": "Male",
+            "Age": "29",
+            "Contact": "+21492164",
+            "Role": "Support Team Member",
+            "rating": 3,
+            "date": "/Date(1402166783294)/"
+        },
+        {
+            "EmpName": "Prachi",
+            "EmpId": 1273612,
+            "Gender": "Female",
+            "Age": "29",
+            "Contact": "+43123125",
+            "Role": "Delivery Manager",
+            "rating": 5,
+            "date": "/Date(1402166783294)/"
+        },
+        {
+            "EmpName": "Subhi",
+            "EmpId": 10982,
+            "Gender": "Female",
+            "Age": "22",
+            "Contact": "+4916499127",
+            "Role": "Support Associate",
+            "rating": 4,
+            "date": "/Date(1402166783294)/"
+        },
+        {
+            "EmpName": "Shyam",
+            "EmpId": 101,
+            "Gender": "Male",
+            "Age": "22",
+            "Contact": "+1254625",
+            "Role": "Support Associate",
+            "rating": 4,
+            "date": "/Date(1402166783294)/"
+        }
+    ]
+}

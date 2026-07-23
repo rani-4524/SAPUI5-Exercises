@@ -1,0 +1,13 @@
+<mvc:View controllerName="fragmentexercise2.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <content>
+    <Button id="_IDGenButton"
+        text="Open Product Dialog"
+        press="onOpenDialog"
+    />
+</content>
+
+    </Page>
+</mvc:View>

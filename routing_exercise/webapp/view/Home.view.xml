@@ -1,0 +1,22 @@
+<mvc:View
+    controllerName="routingexercise.controller.Home"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+>
+    <Page id="_IDGenPage" title="Home Page">
+        <content>
+            <VBox id="_IDGenVBox" class="sapUiSmallMargin">
+                <Input
+                    id="idInput"
+                    placeholder="Enter User Name"
+                />
+
+                <Button id="_IDGenButton1"
+                    text="Details Page"
+                    press="onNextPage"
+                    class="sapUiSmallMarginTop"
+                />
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
