@@ -1,0 +1,31 @@
+<mvc:View
+    controllerName="smartlistcodeexercise.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:smartList="sap.ui.comp.smartlist"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <content>
+            <smartList:SmartList
+                id="ItemsST"
+                entitySet="Orders"
+                header="Orders List"
+                showRowCount="true"
+                showFullScreenButton="true"
+                enableAutoBinding="true"
+            >
+                <smartList:listItemTemplate>
+                    <StandardListItem id="_IDGenStandardListItem"
+                        title="{OrderID}"
+                        description="{CustomerID}"
+                        info="{ShipCountry}"
+                        type="Active"
+                    />
+                </smartList:listItemTemplate>
+            </smartList:SmartList>
+        </content>
+    </Page>
+</mvc:View>

@@ -1,0 +1,128 @@
+<mvc:View controllerName="associationandnavigationexercise.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout" 
+    xmlns:f="sap.ui.layout.form">
+    <Page id="page" title="{i18n>title}">
+    <SplitApp
+    id="SplitAppDemo"
+    initialDetail="detail"
+    initialMaster="master"
+>
+    <detailPages>
+        <Page
+            id="detail"
+            title="Detail 1"
+            backgroundDesign="Solid"
+            class="bgimage"
+        >
+            <Button id="_IDGenButton"
+                text="GotoHomePage"
+                press="gotoHomeView"
+            />
+
+            <VBox id="_IDGenVBox" class="sapUiSmallMargin">
+                <f:SimpleForm
+                    id="SimpleFormChange354"
+                    editable="true"
+                    layout="ResponsiveGridLayout"
+                    title="Data"
+                    labelSpanXL="3"
+                    labelSpanL="3"
+                    labelSpanM="3"
+                    labelSpanS="12"
+                    adjustLabelSpan="false"
+                    emptySpanXL="4"
+                    emptySpanL="4"
+                    emptySpanM="4"
+                    emptySpanS="0"
+                    columnsXL="1"
+                    columnsL="1"
+                    columnsM="1"
+                    singleContainerFullSize="false"
+                >
+                    <f:content>
+                        <Label id="_IDGenLabel1" text="OrderID" />
+
+                        <Text
+                            id="nameText"
+                            text="{OrderID}"
+                        />
+
+                        <Label id="_IDGenLabel2" text="CustomerID" />
+
+                        <Text
+                            id="nameText1"
+                            text="{CustomerID}"
+                        />
+
+                        <Label id="_IDGenLabel3" text="RequiredDate" />
+
+                        <Text
+                            id="nameText2"
+                            text="{OrderDate}"
+                        />
+
+                        <Label id="_IDGenLabel4" text="OrderDate" />
+
+                        <Text
+                            id="nameText3"
+                            text="{RequiredDate}"
+                        />
+
+                        <Label id="_IDGenLabel5" text="ShippedDate" />
+
+                        <Text
+                            id="nameText4"
+                            text="{ShippedDate}"
+                        />
+
+                        <Label id="_IDGenLabel6" text="ShipName" />
+
+                        <Text
+                            id="nameText5"
+                            text="{ShipName}"
+                        />
+
+                        <Label id="_IDGenLabel7" text="ShipAddress" />
+
+                        <Text
+                            id="nameText6"
+                            text="{ShipAddress}"
+                        />
+                    </f:content>
+                </f:SimpleForm>
+            </VBox>
+        </Page>
+    </detailPages>
+
+    <masterPages>
+        <Page
+            id="master"
+            title="Master"
+            backgroundDesign="Solid"
+            class="bgimage"
+        >
+            <SearchField id="_IDGenSearchField" liveChange="onSearch" />
+
+            <content>
+                <List
+                    items="{/Orders}"
+                    id="obj_list"
+                >
+                    <items>
+                        <ObjectListItem id="_IDGenObjectListItem"
+                            press="onListItemPress"
+                            type="Navigation"
+                            title="{OrderID}"
+                            intro="{CustomerID}"
+                        />
+                    </items>
+                </List>
+            </content>
+        </Page>
+    </masterPages>
+</SplitApp>
+
+    </Page>
+</mvc:View>

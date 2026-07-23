@@ -1,0 +1,65 @@
+<mvc:View
+    controllerName="smarttablecodeexercise.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:smartFilterBar="sap.ui.comp.smartfilterbar"
+    xmlns:smartTable="sap.ui.comp.smarttable"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <content>
+            <smartFilterBar:SmartFilterBar
+                id="smartFilterBar"
+                entitySet="Products"
+                persistencyKey="SmartFilter_Explored"
+                enableBasicSearch="true"
+                basicSearchFieldName="ProductName"
+            >
+                <smartFilterBar:controlConfiguration>
+                    <smartFilterBar:ControlConfiguration id="_IDGenControlConfiguration1"
+                        key="ProductName"
+                        visibleInAdvancedArea="true"
+                    />
+
+                    <smartFilterBar:ControlConfiguration id="_IDGenControlConfiguration2"
+                        key="CategoryID"
+                        visibleInAdvancedArea="true"
+                    />
+
+                    <smartFilterBar:ControlConfiguration id="_IDGenControlConfiguration3"
+                        key="SupplierID"
+                        visibleInAdvancedArea="true"
+                    />
+
+                    <smartFilterBar:ControlConfiguration id="_IDGenControlConfiguration4"
+                        key="UnitPrice"
+                        visibleInAdvancedArea="true"
+                    />
+
+                    <smartFilterBar:ControlConfiguration id="_IDGenControlConfiguration5"
+                        key="UnitsInStock"
+                        visibleInAdvancedArea="true"
+                    />
+                </smartFilterBar:controlConfiguration>
+            </smartFilterBar:SmartFilterBar>
+
+            <smartTable:SmartTable
+                id="smartTable"
+                smartFilterId="smartFilterBar"
+                entitySet="Products"
+                tableType="ResponsiveTable"
+                header="Products"
+                enableAutoBinding="true"
+                editable="false"
+                useVariantManagement="true"
+                useTablePersonalisation="true"
+                useExportToExcel="true"
+                showRowCount="true"
+                persistencyKey="SmartTablePKey"
+                initiallyVisibleFields="ProductID,ProductName,UnitPrice,UnitsInStock,CategoryID,SupplierID"
+            />
+        </content>
+    </Page>
+</mvc:View>
